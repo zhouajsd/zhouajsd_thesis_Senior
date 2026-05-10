@@ -30,7 +30,7 @@
     20世纪70年代末至80年代，Elliott提出了著名的三个设计方程，综合考虑了缝隙内外部互耦、高次模影响以及口径场分布，成为现代波导缝隙阵列天线
 设计的主流方法\supercite{4}\supercite{5}。此后，Sangster、Gulick等学者分别在矩量法分析、高精度综合方法等方面做出了重要贡献。
     近年来，国外学者在波导缝隙天线的高增益、低副瓣、和差波束及宽带化等方面取得了诸多进展。例如，Bernal等人设计了工作于2.3GHz的高功率窄带波
-导缝隙阵列，增益达30dB，用于远程引爆系统\supercite{6}；
+导缝隙阵列，如图1.1所示，增益达30dB，用于远程引爆系统\supercite{6}；
 \begin{figure}[htb!]
     \centering
     \begin{subfigure}{.5\textwidth}
@@ -39,16 +39,55 @@
         \caption{辐射体结构模型}
         \label{fig_ref_6a}
     \end{subfigure}
-    \begin{subfigure}{.5\textwidth}
+    \begin{subfigure}{.35\textwidth}
         \centering
         \includegraphics[height=.15\textheight]{./img/参考文献6b.png}
         \caption{馈电层模型}
         \label{fig_ref_6b}
     \end{subfigure}
+    \caption{高功率窄带波导缝隙阵列}
+    \label{fig_ref_6}
 \end{figure}
-    Gatti等人实现了Ku波段双极化波导缝隙阵列，副瓣电平控制在-25dB以下\supercite{7}；
-Costa等人设计了毫米波段三频带波导缝隙线阵\supercite{8}。在低副瓣实现方面，Dolph-Chebyshev综合法、Taylor综合法被广泛应用于阵列激励幅度的优化设计，结合有源导纳法，可在设计
+    
+    Gatti等人实现了Ku波段双极化波导缝隙阵列，如图1.2所示，副瓣电平控制在-25dB以下\supercite{7}；
+\begin{figure}[htb!]
+    \centering
+    \begin{subfigure}{.8\textwidth}
+        \centering
+        \includegraphics[height=.3\textheight]{./img/参考文献7a.png}
+        \caption{三维辐射图}
+        \label{fig_ref_7a}
+    \end{subfigure}
+    \newline
+    \begin{subfigure}{.8\textwidth}
+        \centering
+        \includegraphics[height=.3\textheight]{./img/参考文献7b.png}
+        \caption{方位角辐射图}
+        \label{fig_ref_7b}
+    \end{subfigure}
+    \caption{Ku波段双极化波导缝隙阵列}
+    \label{fig_ref_7}
+\end{figure}
+
+    Costa等人设计了毫米波段三频带波导缝隙线阵\supercite{8}，如图1.3所示，在低副瓣实现方面，Dolph-Chebyshev综合法、Taylor综合法被广泛应用于阵列激励幅度的优化设计，结合有源导纳法，可在设计
 阶段有效抑制副瓣电平。
+\begin{figure}[htb!]
+    \centering  
+    \begin{subfigure}{.35\textwidth}
+        \centering
+        \includegraphics[height=.15\textheight]{./img/参考文献8a.png}
+        \caption{仿真模型图}
+        \label{fig_ref_8a}
+    \end{subfigure}
+    \begin{subfigure}{.35\textwidth}
+        \centering
+        \includegraphics[height=.15\textheight]{./img/参考文献8b.png}
+        \caption{实物模型图}
+        \label{fig_ref_8b}
+    \end{subfigure}
+    \caption{毫米波段三频带波导缝隙线阵}
+    \label{fig_ref_8}
+\end{figure}
 
     总体来看，国外在X波段及以上频段的波导缝隙阵列天线研究已相当成熟，但在S波段、尤其是不低于-30dB的低副瓣设计方面，公开文献相对较少，相关设
 计方法与工程经验仍有待系统化。
@@ -57,24 +96,78 @@ Costa等人设计了毫米波段三频带波导缝隙线阵\supercite{8}。在�
     国内对波导缝隙天线的研究起步较晚，早期以实验测量和工程经验为主。进入90年代后，随着计算机技术与电磁场数值方法的发展，矩量法、有限元法（FEM）、
 时域有限差分法（FDTD）等被逐步引入波导缝隙天线的分析与综合中，设计精度显著提高。
 
-    谢艳萍\supercite{9}设计了C波段高增益水平极化波导缝隙全向天线，采用四块铝片组装波导以降低成本，通过遗传算法优化馈电探针，在5.6GHz～5.85GHz频带内实现VSWR<1.5，
+    谢艳萍\supercite{9}设计了C波段高增益水平极化波导缝隙全向天线，如图1.4所示，采用四块铝片组装波导以降低成本，通过遗传算法优化馈电探针，在5.6GHz～5.85GHz频带内实现VSWR<1.5，
 最大增益约13.99dBi，不圆度控制在±1.5dB以内。该工作在波导结构改进和探针馈电优化方面具有较好的参考价值。
+\begin{figure}[htb!]
+    \centering
+    \includegraphics[height=.3\textheight]{./img/参考文献9.png}
+        \caption{天线结构模型}
+        \label{fig_ref_9}
+\end{figure}
 
-    王竣\supercite{10}设计了X波段高增益低副瓣波导缝隙阵列天线，应用Dolph-Chebyshev综合法分别对波导线阵的缝隙偏移量和耦合波导的斜缝倾角进行优化，实现了副瓣电平低于
+    王竣\supercite{10}设计了X波段高增益低副瓣波导缝隙阵列天线，如图1.5所示，应用Dolph-Chebyshev综合法分别对波导线阵的缝隙偏移量和耦合波导的斜缝倾角进行优化，实现了副瓣电平低于
 -30dB（H面）和-17dB（E面），并设计了和差馈电网络，验证了天线的单脉冲性能。该研究系统展示了低副瓣波导缝隙阵列从理论综合到仿真、加工、测试的完整流程。
+\begin{figure}[htb!]
+    \centering
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[height=.2\textheight]{./img/参考文献10a.png}
+        \caption{仿真模型图}
+        \label{fig_ref_10a}
+    \end{subfigure}
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[height=.2\textheight]{./img/参考文献10b.png}
+        \caption{实物模型图}
+        \label{fig_ref_10b}
+    \end{subfigure}
+    \caption{X波段高增益低副瓣波导缝隙阵列天线}
+    \label{fig_ref_10}
+\end{figure}
 
     侯万杉\supercite{11}等人针对高功率微波应用中的波导缝隙阵天线，提出了一种考虑缝隙互耦效应的电导函数提取新方法。该方法利用现代计算机技术快速计算缝隙电导函数，避免了
 复杂的理论推导与迭代运算。基于该方法设计的S波段（中心频率2.458GHz）波导缝隙面阵，在输入端采用了与目标馈电幅度比一致的提取策略，使得各端口反射系数范围降至-37.2dB～-27.7dB，相
 比传统Stevenson公式设计方法至少降低了19dB，同时实现了-30.2dB的低副瓣电平和332.6MW的高功率容量。该研究对S波段低副瓣波导缝隙
 天线的工程设计具有重要的指导意义。
+\begin{figure}[htb!]
+    \centering
+    \begin{subfigure}{.6\textwidth}
+        \centering
+        \includegraphics[height=.3\textheight]{./img/参考文献11a.png}
+        \caption{仿真模型图}
+        \label{fig_ref_11a}
+    \end{subfigure}
+    \newline
+    \begin{subfigure}{.45\textwidth}
+        \centering
+        \includegraphics[height=.3\textheight]{./img/参考文献11b.png}
+        \caption{E面辐射图}
+        \label{fig_ref_11b}
+    \end{subfigure}
+    \begin{subfigure}{.45\textwidth}
+        \centering
+        \includegraphics[height=.3\textheight]{./img/参考文献11c.png}
+        \caption{H面辐射图}
+        \label{fig_ref_11c}
+    \end{subfigure}
+    \caption{S波段低副瓣波导缝隙面阵}
+    \label{fig_ref_11}
+\end{figure}
 
     邓世露\supercite{12}围绕低副瓣波导缝隙阵列天线开展了系统研究，分别设计了矩形波导、单脊波导和基片集成波导（SIW）三种形式的天线。在X波段，设计了低副瓣矩形波导缝隙行
 波阵列天线，通过相邻波导镜像倒置有效抑制了交叉极化；进一步设计了单脊波导缝隙行波阵列天线，通过增加缝隙宽度、调整缝隙间距和优化导纳分布，在9.05GHz～9.75GHz频带内实现副瓣低于-30
 dB、增益大于28dBi、带宽达700MHz；在此基础上，设计了双极化波导缝隙行波阵列天线，在两种极化方式下均实现副瓣低于-30dB、增益大于31dBi，且波束指向和波束宽度高度一致。在Ka波段，
 设计了基于SIW的低副瓣缝隙驻波阵列天线，并通过稀疏化处理和复合超表面加载，将带宽增加600MHz、增益提高1dBi、副瓣降低2dB，最终加工测试验证了设计的有效性。该研究覆盖了行波阵与驻
 波阵两种天线形式，工作频段涵盖X波段和Ka波段，对低副瓣波导缝隙天线的多样化设计具有较好的参考价值。
+\begin{figure}[htb!]
+    \centering
+    \includegraphics[width=.9\textwidth]{./img/参考文献12.png}
+    \caption{邓世露设计的波导缝隙阵列天线}
+    \label{fig_ref_12}
+\end{figure}
 
-    此外，国内学者在基片集成波导（SIW）缝隙天线、宽带波导缝隙阵列、共形波导缝隙天线等方面也开展了大量研究。例如，胡伟\supercite{13}等人设计了X波段宽带波导缝隙阵列，史嘉\supercite{14}等人设计了新型X波段波导
+
+    此外，国内学者在基片集成波导（Substrate Integrated Waveguide, SIW）缝隙天线、宽带波导缝隙阵列、共形波导缝隙天线等方面也开展了大量研究。例如，胡伟\supercite{13}等人设计了X波段宽带波导缝隙阵列，史嘉\supercite{14}等人设计了新型X波段波导
 缝隙阵列等。但在S波段，公开报道的低副瓣（< -30dB）波导缝隙阵列天线研究仍较为有限，侯万杉\supercite{11}等人的工作是该频段内具有代表性的研究成果之一。
 
 \subsubsection{国内外文献综述简析}
@@ -97,16 +190,73 @@ dB、增益大于28dBi、带宽达700MHz；在此基础上，设计了双极化�
 
     （2）波导缝隙阵列天线基本理论
 
-    介绍波导缝隙阵列天线的基本理论。
+    介绍波导缝隙阵列天线的基本理论。由矩形波导缝隙天线引入波导缝隙天线的辐射原理，推导各种形式缝隙的等效阻抗或导纳；分析缝隙间互耦。讨论可以实现高增益低副瓣的
+设计方法，如Dolph-Chebyshev综合法和Taylor综合法。
 
     （3）波导缝隙线阵设计
 
-    以S波段中心频率2.45GHz为设计目标，进行单线阵的优化仿真，寻找最佳设计方案。
+    以S波段中心频率2.45GHz为设计目标，进行线阵的优化仿真，在中心频率固定即波导尺寸固定的情况下，通过对缝隙位置和数量的调整，在保证方向图不失真的前提下，尽量降低副瓣电平，
+以便后续面阵设计时有更大的设计空间。仿真分析不同参数对天线性能的影响，并优化天线结构，验证设计方法的有效性。
 
     （4）波导缝隙面阵设计
 
-    在单线阵的基础上，根据Dolph-Chebyshev综合法和Taylor综合法设计面阵，并进行优化仿真,实现副瓣电平低于-30dB的设计目标。
+    在优化的线阵基础上，设计面阵天线，并进行仿真分析，验证设计方法的有效性。
 
-    (5)总结与展望
+    （5）总结与展望
 
     总结全文工作，分析研究中存在的不足，并对未来的研究方向进行展望。
+
+\section{波导缝隙天线基本理论}
+
+\subsection{引言}
+
+    本章主要介绍与波导o缝隙阵列天线相关的基本理论，包括矩形波导缝隙天线的辐射原理、各种形式缝隙的等效阻抗或导纳的推导，以及缝隙间互耦的分析。最后，讨论实现高增益低副瓣设计
+的方法，如Dolph-Chebyshev综合法和Taylor综合法。以上理论在本课题天线设计的过程中起到了很重要的作用。
+
+\subsection{矩形波导缝隙天线}
+
+    矩形波导是波导缝隙天线最常用的传输线形式。矩形波导主模为TE$_{10}$模，当矩形波导仅传输主模时，可以等效为双线传输线，波导内部的电磁场分布具有明确的规律：电场主要集中在波导宽边的中心区域，
+并沿宽边方向呈正弦分布；磁场则同时具有横向和纵向分量。内部电磁场表达式如下：
+
+\begin{equation}    
+    \begin{aligned}
+        \vec{E}_t &= \vec{E}_{10t} \exp(\mp j \beta_{10}z) \\
+        \vec{H}_t &= \pm \vec{H}_{10t} \exp(\mp j \beta_{10}z)\\
+        \vec{H}_t &= j \vec{H}_{10z} \exp(\mp j \beta_{10}z)
+    \end{aligned}
+\end{equation}
+其中，$\vec{E}_t$和$\vec{H}_t$分别为横向电场和磁场分量，$\vec{H}_{10z}$为纵向磁场分量，$\beta_{10}$为TE$_{10}$模的传播常数。根据电磁场边界条件，波导内壁的表面电流密度由磁场切向分量决定，其流向与磁场方向满足右手定则。
+
+    波导作为一种封闭的金属结构，能够对内部传播的电磁波形成有效屏蔽。当将矩形波导近似视为理想导体时，其内部体电场为零，波导内壁成为一个等位面。在此条件下，波导内部传播的电磁波会在其金属壁面上激励出感应电流。由于趋肤效应的影响，这些感应电流主要集中在波导的内壁表面流动。
+波导内壁上的面电流密度分布直接由壁面处的切向磁场决定.设波导内壁的单位法向向量为$\vec{n}$，则表面电流密度$\vec{J}_s$与切线磁场$\vec{H}_t$之间的关系可通过边界条件表示为：
+
+\begin{equation}
+    \vec{J}_s = \vec{n} \times \vec{H}_t
+\end{equation}
+    
+    该式表明，内壁上的电流密度大小与切向磁场强度成正比，方向则同时垂直于法向与磁场方向。
+
+    当在矩形波导的宽边上开设缝隙时，缝隙会扰乱原有的电磁场分布，导致部分能量从缝隙处辐射出去。根据缝隙的位置、尺寸和形状不同，可以形成不同类型的缝隙天线，如单缝、双缝、偏置缝等。每种类型的缝隙天线都有其独特的辐射特性和设计方法。
+
+\subsection{波导缝隙天线辐射原理}
+
+\subsubsection{理想缝隙天线}
+    理想缝隙天线是一种基础的天线分析模型，其构造非常简单：在一块理想导体平板上开设一条细窄的缝隙，且该平板被视为面积无限大、厚度无限薄。如图2.1 a)所示，该缝隙的长度$L$远小于工作波长$\lambda$，且缝隙宽度$w$远小于$L$。当在缝隙两端市价射频激励电压
+$U_0$时，缝隙口面上会建立起电场分布$E_a$，这种结构被称作短缝隙。图2.1 b)则给出了与之互补的带状短波振子结构。
+\begin{figure}[htb!]
+    \centering
+    \begin{subfigure}{.45\textwidth}
+        \centering
+        \includegraphics[height=.4\textheight]{./img/原理2.2a.png.png}
+        \caption{短缝隙}
+        \label{fig_principle_2.2a}
+    \end{subfigure}
+    \begin{subfigure}{.45\textwidth}
+        \centering
+        \includegraphics[height=.4\textheight]{./img/原理2.2b.png}
+        \caption{短振子}
+        \label{fig_principle_2.2b}
+    \end{subfigure}
+    \caption{短缝隙与互补短振子结构示意图}
+    \label{fig_principle_2.2}
+\end{figure}
