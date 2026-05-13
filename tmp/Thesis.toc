@@ -11,5 +11,5 @@
 \contentsline {subsection}{\numberline {2.3}波导缝隙天线辐射原理}{11}{subsection.2.3}%
 \contentsline {subsubsection}{\numberline {2.3.1}理想缝隙天线}{11}{subsubsection.2.3.1}%
 \contentsline {subsubsection}{\numberline {2.3.2}缝隙形式及其等效电路}{13}{subsubsection.2.3.2}%
-\contentsline {section}{参考文献}{17}{equation.2.25}%
+\contentsline {section}{参考文献}{17}{equation.2.26}%
 \contentsline {section}{致谢}{19}{section*.13}%
