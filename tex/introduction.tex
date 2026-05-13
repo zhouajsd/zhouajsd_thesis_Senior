@@ -215,8 +215,70 @@ dB、增益大于28dBi、带宽达700MHz；在此基础上，设计了双极化�
 
 \subsection{矩形波导缝隙天线}
 
-    矩形波导是波导缝隙天线最常用的传输线形式。矩形波导主模为TE$_{10}$模，当矩形波导仅传输主模时，可以等效为双线传输线，波导内部的电磁场分布具有明确的规律：电场主要集中在波导宽边的中心区域，
+    矩形波导（如图2.1所示）是波导缝隙天线最常用的传输线形式。
+    
+\begin{figure}[htb!]
+    \centering
+    \includegraphics[height=.3\textheight]{./img/原理2.1.1.png}
+    \caption{矩形波导示意图}
+    \label{fig_principle_2.1.1}
+\end{figure}
+
+    对TM模（$H_z$=0,$E_0$决定于激励情况）
+\begin{equation}
+    \begin{cases}
+        H_{x0}=j\frac{\omega \varepsilon}{k_c^2}E_0
+            \left(\frac{n\pi}{b}\right)
+            \sin\left(\frac{m\pi}{a}x\right)
+            \cos\left(\frac{n\pi}{b}y\right)\\
+        H_{y0}=-j\frac{\omega \varepsilon}{k_c^2}E_0
+            \left(\frac{m\pi}{a}\right)
+            \cos\left(\frac{m\pi}{a}x\right)
+            \sin\left(\frac{n\pi}{b}y\right)\\
+        E_{x0}=-j\frac{\beta}{k_c^2}E_0
+            \left(\frac{m\pi}{a}\right) 
+            \cos\left(\frac{m\pi}{a}x\right)
+            \sin\left(\frac{n\pi}{b}y\right)\\
+        E_{y0}=-j\frac{\beta}{k_c^2}E_0
+            \left(\frac{n\pi}{b}\right)
+            \sin\left(\frac{m\pi}{a}x\right)
+            \cos\left(\frac{n\pi}{b}y\right)\\
+    \end{cases}
+\end{equation}
+
+    对TE模（$E_z$=0,$E_0$决定于激励情况）
+\begin{equation}
+    \begin{cases}
+        E_{x0}=j\frac{\omega \mu}{k_c^2}H_0
+            \left(\frac{n\pi}{b}\right)
+            \cos\left(\frac{m\pi}{a}x\right)
+            \sin\left(\frac{n\pi}{b}y\right)\\
+        E_{y0}=-j\frac{\omega \mu}{k_c^2}H_0
+            \left(\frac{m\pi}{a}\right)
+            \sin\left(\frac{m\pi}{a}x\right)
+            \cos\left(\frac{n\pi}{b}y\right)\\
+        H_{x0}=j\frac{\beta}{k_c^2}H_0
+            \left(\frac{m\pi}{a}\right)
+            \sin\left(\frac{m\pi}{a}x\right)
+            \cos\left(\frac{n\pi}{b}y\right)\\
+        H_{y0}=j\frac{\beta}{k_c^2}H_0
+            \left(\frac{n\pi}{b}\right)
+            \cos\left(\frac{m\pi}{a}x\right)
+            \sin\left(\frac{n\pi}{b}y\right)\\
+    \end{cases}
+\end{equation}
+
+    假如波向 z 方向传播，故各个场分量的复振幅求得后，均乘以n相位因子$e^j{bete}z$,即得矩形波导的TE模场强。
+
+    矩形波导主模为TE$_{10}$模，图2.2为其各个面上的电磁场，当矩形波导仅传输主模时，可以等效为双线传输线，波导内部的电磁场分布具有明确的规律：电场主要集中在波导宽边的中心区域，
 并沿宽边方向呈正弦分布；磁场则同时具有横向和纵向分量。内部电磁场表达式如下：
+
+\begin{figure}[htb!]
+    \centering
+    \includegraphics[height=.3\textheight]{./img/原理2.1.2.png}
+    \caption{TE$_{10}$波的电磁场分布与面电流分布}
+    \label{fig_principle_2.2}
+\end{figure}
 
 \begin{equation}    
     \begin{aligned}
@@ -236,7 +298,15 @@ dB、增益大于28dBi、带宽达700MHz；在此基础上，设计了双极化�
     
     该式表明，内壁上的电流密度大小与切向磁场强度成正比，方向则同时垂直于法向与磁场方向。
 
-    当在矩形波导的宽边上开设缝隙时，缝隙会扰乱原有的电磁场分布，导致部分能量从缝隙处辐射出去。根据缝隙的位置、尺寸和形状不同，可以形成不同类型的缝隙天线，如单缝、双缝、偏置缝等。每种类型的缝隙天线都有其独特的辐射特性和设计方法。
+    将一根波导放至自由空间，在波导输入端输入信号，波导终端接短路版。
+当在矩形波导宽壁上偏离中心轴线一定距离处开设一条纵向缝隙时，该缝隙会
+对波导宽壁上的横向传导电流产生截断效应。缝隙口面处的传导电流将转化为
+位移电流，从而激励电磁波向外辐射；与此同时，缝隙也会激发若干高次模式，
+这些模式会向前后两个方向传播。由于波导结构中高次模的截止特性，这些模式
+在传播很短的距离后便迅速衰减，最终可忽略不计。缝隙偏离波导中心的距离以
+及缝隙本身的长度，共同决定了其对原传导电流的截断强度与相位关系，进而控
+制了缝隙口面上电场分布的幅值与相位。这些参数最终影响了天线的远场辐射
+方向图以及输入端口的阻抗特性。
 
 \subsection{波导缝隙天线辐射原理}
 
@@ -247,16 +317,189 @@ $U_0$时，缝隙口面上会建立起电场分布$E_a$，这种结构被称作�
     \centering
     \begin{subfigure}{.45\textwidth}
         \centering
-        \includegraphics[height=.4\textheight]{./img/原理2.2a.png.png}
+        \includegraphics[height=.4\textheight]{./img/原理2.2.1a.png}
         \caption{短缝隙}
-        \label{fig_principle_2.2a}
+        \label{fig_principle_2.2.1a}
     \end{subfigure}
     \begin{subfigure}{.45\textwidth}
         \centering
-        \includegraphics[height=.4\textheight]{./img/原理2.2b.png}
+        \includegraphics[height=.4\textheight]{./img/原理2.2.1b.png}
         \caption{短振子}
-        \label{fig_principle_2.2b}
+        \label{fig_principle_2.2.1b}
     \end{subfigure}
     \caption{短缝隙与互补短振子结构示意图}
-    \label{fig_principle_2.2}
+    \label{fig_principle_2.2.1}
 \end{figure}
+
+    一个纵向长度被无线压缩的，半径为$a$≈$w$/4的圆柱短振子，可以视作一个带状短电i振子的替代结构。在结构g中$z$轴存在一定电流通过，电流最大值$I_0$
+位于结构中心处，且电流分布近似为半正弦分布。根据互补原理，短缝隙与短振子在相同位置处具有相同的电场分布，因此可以通过分析短振子的电流分布来推导短缝隙的电磁分布如式2.3:
+
+\begin{equation}
+    \begin{cases} 
+        E_d = j\eta \frac{kI_0L}{8\pi r} \sin\theta e^{-ikr} \\
+        H_d = j\frac{kI_0L}{8\pi r} \sin\theta e^{-ikr}
+    \end{cases}
+\end{equation}
+
+    因此如果存在一个相同结构的导磁片，可以求解出其磁流源辐射场：
+\begin{equation}
+    \begin{cases}
+        H_m = j \frac{kI_0^m L}{8\pi r\eta} \sin \theta e^{-ikr}\\
+        E_m = -j \frac{kI_0^m L}{8\pi r} \sin \theta e^{-ikr}
+    \end{cases}
+\end{equation}
+    如果存在一对短缝隙天线，且为互补的，可以求解其上感应电流空间场：
+\begin{equation}
+    \begin{cases}
+        E_s = -E_e^s = j \frac{kI_0^m L}{8\pi r} \sin \theta e^{-ikr} \\
+        H_s = -H_e^s = -j \frac{kI_0^m L}{8\pi r\eta} \sin \theta e^{-ikr}
+    \end{cases}
+\end{equation}
+    式中，带有下标$s$的物理量代表短缝隙天线自身的相关参数。由此可以得出，位于面$s$上的感应电流为短缝隙提供了辐射场，并且该辐射场在数值上可视为与磁流
+    $I_0^m$在短缝隙平行方向上的辐射场相等。短缝隙两端所施加的电压$U_0$的大小直接决定了磁流$I_0^m$的幅值。如图2.1 b)所示，在振子结构的中点处，电流达到最大值$I_0$，
+    该电流与该点表面处磁场$H_0$之间存在如下关系：
+\begin{equation}
+    I_0 = \oint_l \vec{H}_0 \cdot d\vec{l} = 2H_0 W
+\end{equation}
+因此可对其求对偶：
+\begin{equation}
+    I_0^m=2E_0 w=2U_0
+\end{equation}
+
+    同理，通过加与缝隙两端的射频h电压$U_0$求出其表面磁场，也可证明上述结论。综上所述，短缝隙天线的辐射原理可以通过互补原理与短振子结构进行分析和理解。
+短缝隙天线的电场分布与短振子的电流分布相同，并且其辐射场可以视为由磁流源产生的辐射场。这些基本理论为后续波导缝隙阵列天线的设计提供了重要的基础。
+
+\subsubsection{缝隙形式及其等效电路}
+
+    波导结构本身对内部电磁场具有封闭约束作用。当在波导的金属壁面上加工出不同形式的缝隙时，这些缝隙便能够借助波导内部原有的场分布实现能量向外耦合。主模TE$_{10}$模式下
+的壁电流可分解为横向和纵向两个分量。其中，横向电流沿波导宽边呈余弦规律变化，在宽边中心处幅值最大；而在波导窄边上，仅存在横向电流，且其分布较为均匀。当所开缝隙的方向与
+电流线方向呈现一定夹角时，电流路径会被缝隙截断，原有的传导电流转变为位移电流继续维持流动，从而使缝隙获得激励。由此可见，波导内部传输的功率正是通过缝隙向外辐射的。
+    
+    如图2.4所示,是矩形波导中几种常见的开缝形式，“1”为宽边纵缝，“2”为宽边斜缝，“3”为宽边中心斜缝，“4”为宽边斜缝，“5”，“6”为窄边斜缝。根据缝隙天线的理论可得，如果缝隙切割的电流越强，那么通过缝隙产生的辐射就
+越强。所以当电场保持恒定时，横向缝隙与电场相互垂直，产生的辐射能量比倾斜缝隙大；当缝隙保持固定时，电场被缝隙切割越强，从缝隙处向外辐射的能量越大。
+
+\begin{figure}[htb!]
+    \centering
+        \centering
+        \includegraphics[height=.3\textheight]{./img/原理2.2.2.png}
+        \caption{各种缝隙形式}
+        \label{fig_principle_2.2.2}
+\end{figure}
+
+    通常来说，矩形波导的缝隙位置在波导的宽边波壁和窄边波壁上。 此时波导上的电流分布会随着缝隙与电流方向之间形成的夹角而发生变化。 由于横向缝隙和纵向缝隙对电流作用不同， 其等效电路和分析方法不同，
+因此需要分别进行分析。
+
+    在图2.5 a）中，当当沿波导宽边方向开设一条纵向缝隙时，缝隙两端的电流路径被截断并改变流向。此时，该纵向缝隙在等效电路中可视为一个并联导纳。在图2.5 b）中，同样在宽边上开设一条横向缝隙，该横向缝隙会切断纵向电流，
+同时引起电场分布的改变。总电场$E_y$的变化导致电压发生变化，这一效应可等效为串联电路中引入一个阻抗。图2.5 c）至图2.5 e）则分别展示了宽边中心斜缝、宽边斜缝和窄边斜缝的等效电路示意图。不同形式的缝隙会对电流路径和
+电场分布产生不同程度的影响，从而导致其等效电路中的导纳或阻抗参数发生变化。这些等效电路模型为分析和设计波导缝隙天线提供了重要的工具。展示了其他几种缝隙取向所对应的阻抗等效形式。在图2.5 e）中，纵向电流沿传播方向的变化与电场$E_y$
+的变化，共同等效为并联电路中增加一个导纳、串联电路中增加一个阻抗的复合影响。
+
+    对于上述各类缝隙结构，其电导或电阻的计算思路是：首先确定缝隙在两个方向上的散射场分布，然后依据功率守恒关系建立方程，进而求得相应的电阻或电导值。不过，这一计算过程可以通过更为简洁的方法实现。下面以宽边纵向缝隙为例，给出具体的推导过程。
+
+    设$P_i$为入射功率，$P_s$为纵向缝隙的辐射功率，根据图2.5 a）中对等效电路的求解：
+\begin{equation}
+    \frac{1}{2} U^2 g Y_0 = P_s
+\end{equation}
+\begin{equation}
+    \frac{1}{2} U^2 Y_0 = P_i-P_s
+\end{equation}
+    式中g为纵向缝隙的归一化等效电导，$Y_0$为传输线特性导纳，$U$为传输线电压。一般条件下均有$P_s \ll P_i$,(2.10)、(2.11)相除可以求得：
+\begin{equation}
+    g = \frac{P_s}{P_i-P_s} \approx \frac{P_s}{P_i}
+\end{equation}
+    波导宽高尺寸分别为a、b，其±z方向主模为TE$_{10}$波：
+\begin{equation}
+    E_y=E_10 \sin\left(\frac{\pi x}{a}\right) e^{-j\beta z}
+\end{equation}
+\begin{equation}
+    H_x=-\frac{E_10}{y_TE}\sin\left(\frac{\pi x}{a}\right) e^{-j\beta z}
+\end{equation}
+\begin{equation}
+    H_z=-j\frac{E_10}{y_TE}\frac{\lambda}{2 a}\cos\left(\frac{\pi x}{a}\right) e^{-j\beta z}
+\end{equation}
+    式中：
+\begin{equation}
+    \beta=\frac{2\pi}{\lambda_g}=\frac{2\pi}{\lambda}\sqrt{1-\left(\frac{\lambda}{2a}\right)^2}=\sqrt{k^2-\left(\frac{\pi}{2a}\right)^2}
+\end{equation}
+\begin{equation}
+   \eta_TE=\eta_0 \frac{\lambda_g}{\lambda}=\eta_0\sqrt{1-\left(\frac{\lambda}{2a}\right)^2}
+\end{equation}
+    入射功率在±z为：
+\begin{equation}
+    P_i=\frac{1}{2} Re \int_0^a \int_0^b - E_y H_x^{*}\, dxdy\\
+    =\frac{1}{2}\int_0^a \int_0^b\frac{E_{10}^{2}}{\eta_TE}\sin^{2}\left(\frac{\pi x}{a}\right)\, dxdy
+    =\frac{E_{10}^{2}ab}{4\eta_TE}
+\end{equation}
+纵向缝隙的辐射功率：
+\begin{equation}
+    P_s=\frac{1}{2}U_M^2 G_s
+\end{equation}
+式中$U_M$为波腹电压，$G_s$为辐射电导。
+
+\begin{figure}[htb!]
+    \begin{subfigure}{.6\textwidth}
+        \centering
+        \includegraphics[height=.15\textheight]{./img/原理2.2.3a.png}
+        \caption{宽边纵缝及其等效电路}
+        \label{fig_principle_2.2.3a}
+    \end{subfigure}\\
+    \begin{subfigure}{.6\textwidth}
+        \centering
+        \includegraphics[height=.15\textheight]{./img/原理2.2.3b.png}
+        \caption{窄边横缝及其等效电路}
+        \label{fig_principle_2.2.3b}
+    \end{subfigure}\\
+    \begin{subfigure}{.6\textwidth}
+        \centering
+        \includegraphics[height=.15\textheight]{./img/原理2.2.3c.png}
+        \caption{宽边中心斜缝及其等效电路}
+        \label{fig_principle_2.2.3c}
+    \end{subfigure}\\
+    \begin{subfigure}{.6\textwidth}
+        \centering
+        \includegraphics[height=.15\textheight]{./img/原理2.2.3d.png}
+        \caption{宽边斜缝及其等效电路}
+        \label{fig_principle_2.2.3d}
+    \end{subfigure}\\
+    \begin{subfigure}{.6\textwidth}
+        \centering
+        \includegraphics[height=.15\textheight]{./img/原理2.2.3e.png}
+        \caption{窄边斜缝及其等效电路}
+        \label{fig_principle_2.2.3e} 
+    \end{subfigure}
+    \caption{波导缝隙形式及其等效电路示意图}
+    \label{fig_principle_2.2.3}
+\end{figure}
+
+    在一个无穷大的理想平面上，一个半波缝隙电导为：
+\begin{equation}
+    G_r^s=\frac{1}{R_r^s}=\frac{73.1}{\left(60 \pi\right)^2}
+\end{equation}
+    而波导尺寸邮箱，在实际应用中的波导a缝隙处的电导一般是理论数据的0.5倍，即：
+\begin{equation}
+    G_s=\frac{73.1}{2\left(60 \pi\right)^2}
+\end{equation}
+    而$U_M$的求解方法需要根据振子表面的半波振子传播特性计算。假设电场分量是在上文中的半波振子在±z传播的电场i，
+则这一方向为半波振子的切线方向，在振子上取一微分 dz，这一微分可提供\(dP=\frac{1}{2}\left(E_z dz\right)I_z^* \)
+的功率微分。那么可以计算半波振子的电流：
+\begin{equation}
+    I_z=I_M\sin k\left(l-\left|z\right|\right)=I_M cos kz
+\end{equation}
+    得到半波振子功率：
+\begin{equation}
+    P=\frac{1}{2}\int_{-\lambda/4}^{\lambda/4}E_z I_M^{*}\cos kz \, dz=\frac{1}{2}I_M^{2}\cdot 73.1
+\end{equation}
+    波腹电流：
+\begin{equation}
+    I_M=\frac{1}{73.1}\int_{-\lambda/4}^{\lambda/4}E_z \cos kz \, dz
+\end{equation}
+    波腹电压可以由磁场在纵向方向上的分量H_z给出：
+\begin{equation}
+    U_M=\frac{1}{G}\int_{-\lambda/4}^{\lambda/4}H_z \cos kz \,dz
+\end{equation}
+    将纵向缝隙的位置放置在距中心线$x_1$处，有：
+\begin{equation}
+    U_M = j \frac{E_{10}}{G_s \eta_0} \left( \frac{\lambda}{2a} \right) \sin \frac{\pi x_1}{a} \int_{-\lambda/4}^{\lambda/4} e^{-j\beta z} \cos kz \, dz
+
+= j \frac{E_{10}}{G_s \eta_0} \left( \frac{\lambda}{2a} \right) \sin \frac{\pi x_1}{a} \frac{2k \cos \frac{\pi \lambda}{2\lambda_g}}{k^2 - \beta^2}
+\end{equation}

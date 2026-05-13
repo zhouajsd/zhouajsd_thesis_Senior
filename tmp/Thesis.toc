@@ -8,7 +8,8 @@
 \contentsline {section}{\numberline {2}波导缝隙天线基本理论}{8}{section.2}%
 \contentsline {subsection}{\numberline {2.1}引言}{8}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}矩形波导缝隙天线}{9}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}波导缝隙天线辐射原理}{10}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}理想缝隙天线}{10}{subsubsection.2.3.1}%
-\contentsline {section}{参考文献}{11}{figure.caption.8}%
-\contentsline {section}{致谢}{13}{section*.9}%
+\contentsline {subsection}{\numberline {2.3}波导缝隙天线辐射原理}{11}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}理想缝隙天线}{11}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}缝隙形式及其等效电路}{13}{subsubsection.2.3.2}%
+\contentsline {section}{参考文献}{17}{equation.2.25}%
+\contentsline {section}{致谢}{19}{section*.13}%
