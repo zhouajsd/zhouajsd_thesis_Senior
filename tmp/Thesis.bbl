@@ -274,6 +274,7 @@
       \strng{nameanamehash}{f35e145799a8cfc5577bb6f4dc30c621}
       \strng{nameafullhash}{f35e145799a8cfc5577bb6f4dc30c621}
       \strng{nameafullhashraw}{f35e145799a8cfc5577bb6f4dc30c621}
+      \field{extraname}{1}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
@@ -1530,6 +1531,53 @@
       \field{pages}{859\bibrangedash 862}
       \range{pages}{4}
       \keyw{24}
+    \endentry
+    \entry{25}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=2899218e72f7f0ec57b958ae0fc22b5b}{%
+           family={Elliott},
+           familyi={E\bibinitperiod},
+           given={Robert\bibnamedelima S},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=2899218e72f7f0ec57b958ae0fc22b5b}{%
+           family={Elliott},
+           familyi={E\bibinitperiod},
+           given={Robert\bibnamedelima S},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{2899218e72f7f0ec57b958ae0fc22b5b}
+      \strng{fullhash}{2899218e72f7f0ec57b958ae0fc22b5b}
+      \strng{fullhashraw}{2899218e72f7f0ec57b958ae0fc22b5b}
+      \strng{bibnamehash}{2899218e72f7f0ec57b958ae0fc22b5b}
+      \strng{authorbibnamehash}{2899218e72f7f0ec57b958ae0fc22b5b}
+      \strng{authornamehash}{2899218e72f7f0ec57b958ae0fc22b5b}
+      \strng{authorfullhash}{2899218e72f7f0ec57b958ae0fc22b5b}
+      \strng{authorfullhashraw}{2899218e72f7f0ec57b958ae0fc22b5b}
+      \strng{nameabibnamehash}{2899218e72f7f0ec57b958ae0fc22b5b}
+      \strng{nameanamehash}{2899218e72f7f0ec57b958ae0fc22b5b}
+      \strng{nameafullhash}{2899218e72f7f0ec57b958ae0fc22b5b}
+      \strng{nameafullhashraw}{2899218e72f7f0ec57b958ae0fc22b5b}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{INC., Publication}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Antenna theory and design}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \keyw{25}
     \endentry
   \enddatalist
 \endrefsection

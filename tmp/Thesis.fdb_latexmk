@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber tmp/Thesis"] 0 "tmp/Thesis.bcf" "tmp/Thesis.bbl" "tmp/Thesis" 1778495623.05841 -1
-  "ref.bib" 1777556371 6682 2c9c86bd1ae265bbad6affd9e6dda2ad ""
-  "tmp/Thesis.bcf" 1778495622 138606 32f667f1acd85bcc93f0851cb7f7dfe9 "xelatex"
+["biber tmp/Thesis"] 1778764303.81783 "tmp/Thesis.bcf" "tmp/Thesis.bbl" "tmp/Thesis" 1778766179.2034 0
+  "ref.bib" 1778763871 7571 48785fa9cfb21c1a37333afa50de60e8 ""
+  "tmp/Thesis.bcf" 1778766167 138895 1eeba3800390678de3eb06c57ba6cca8 "xelatex"
   (generated)
   "tmp/Thesis.bbl"
   "tmp/Thesis.blg"
   (rewritten before read)
-["xdvipdfmx"] 0 "tmp/Thesis.xdv" "tmp/Thesis.pdf" "tmp/Thesis" 0 -1
-  "tmp/Thesis.xdv" 1778495622 310132 da51ba61c98ed515ebe0a251a2870b5f "xelatex"
+["xdvipdfmx"] 1778766168.10848 "tmp/Thesis.xdv" "tmp/Thesis.pdf" "tmp/Thesis" 1778766179.22795 0
+  "tmp/Thesis.xdv" 1778766167 357536 3f2e11fb8cebf6fcb161ba995734cce8 "xelatex"
   (generated)
   "tmp/Thesis.pdf"
   (rewritten before read)
-["xelatex"] 1778495614.55561 "d:/QQdata/1094699852/FileRecv/2022级毕设/HFUT-Thesis-zmy/Thesis.tex" "tmp/Thesis.xdv" "Thesis" 1778495623.06064 2
+["xelatex"] 1778766162.09728 "d:/QQdata/1094699852/FileRecv/2022级毕设/HFUT-Thesis-zmy/Thesis.tex" "tmp/Thesis.xdv" "Thesis" 1778766179.20395 0
   "Thesis.tex" 1777433809 896 bac06527834dbe4fa9580ce5a2da9a72 ""
   "d:/QQdata/1094699852/FileRecv/2022级毕设/HFUT-Thesis-zmy/Thesis.tex" 1777433809 896 bac06527834dbe4fa9580ce5a2da9a72 ""
   "e:/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1777294350 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -262,30 +262,33 @@
   "img/原理2.2.3c.png" 1778489500 11181 f5e10bc1c3c85b574a02342182a8ff60 ""
   "img/原理2.2.3d.png" 1778489519 13718 b50034601ad5db5e70347caabecdf5e6 ""
   "img/原理2.2.3e.png" 1778489543 15491 0a8ad454b2edb24f1f81d98300793f20 ""
+  "img/原理2.3.1a.jpg" 1778749319 59300 bb02352a09a900e7f7eab6db7d5a139a ""
+  "img/原理2.3.1b.jpg" 1778749691 28469 606e423ce1aeb0fd8e4215962d2cb446 ""
+  "img/原理2.3.2.jpg" 1778762317 37168 7f4716b958287210b4e1b6853a3e42cc ""
   "tex/abstract.tex" 1778326040 3002 775e7a656517f9e311c6ed208aceaaab ""
   "tex/acknowledge.tex" 1720151869 267 9c78c5207f71985ed7100ffdea3adc32 ""
   "tex/info.tex" 1777434232 1513 0e0d6abfa54ad7ad3c788cdb5e8be4e9 ""
-  "tex/introduction.tex" 1778495613 32258 28dd2d4be73558de877bee5fcfb9b6c9 ""
+  "tex/introduction.tex" 1778766154 40644 90717f2decd594c6c5b1669fb3938574 ""
   "tex/pages/chinese_title.tex" 1720151869 838 ee7c842304fec4bf1933bbf2eccb2bf8 ""
   "tex/pages/cover.tex" 1720151869 2001 0b7b757f198b948be18cbf520ef80f0a ""
   "tex/pages/english_title.tex" 1720151869 568 ad9f05214cb80be6a2d131bfa1cd4d13 ""
   "tex/pages/statement.tex" 1777434165 2138 9237b013bd7bd0ffdc0b23f1ec3aa063 ""
   "tex/pages/toc.tex" 1720151869 140 ca92d63363128c49c4d0ac5e736e0080 ""
-  "tmp/Thesis.aux" 1778495622 3434 71f402fffb6babf1ba89acbf9be57b9c "xelatex"
-  "tmp/Thesis.bbl" 1778493322 61147 c0b16c6b94d3d4678b600a8bd2cc3027 "biber tmp/Thesis"
-  "tmp/Thesis.lof" 1778495622 1391 94d79cf87f0142f4f226e46e2be072ff "xelatex"
-  "tmp/Thesis.lot" 1778495618 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
-  "tmp/Thesis.out" 1778495622 1789 9817e2da431959d5a7e935850f4f962f "xelatex"
-  "tmp/Thesis.run.xml" 1778495622 2423 79caac9a9d1be64d3782920f2a72fd8a "xelatex"
-  "tmp/Thesis.toc" 1778495622 1329 6e87d01d2d6e588f2bfd546873758c4a "xelatex"
-  "tmp/tex/abstract.aux" 1778495618 4994 41b963618bb641081ac42d62170a10e4 "xelatex"
-  "tmp/tex/acknowledge.aux" 1778495622 5094 c5455cc9921b896698a9bf80f29db8d3 "xelatex"
-  "tmp/tex/introduction.aux" 1778495621 16445 95b7f2c7e771d9eb6ab558fc5003acf8 "xelatex"
-  "tmp/tex/pages/chinese_title.aux" 1778495618 5005 7a809250a5f0be90d97c771c84f1cad3 "xelatex"
-  "tmp/tex/pages/cover.aux" 1778495618 4997 ccc6d75016711e63a5f1f29f60d4497b "xelatex"
-  "tmp/tex/pages/english_title.aux" 1778495618 5005 54e9ad3b9f28dfd21691a2eb014b4a4a "xelatex"
-  "tmp/tex/pages/statement.aux" 1778495618 5001 5397d5f8f72ea41978c586584091729f "xelatex"
-  "tmp/tex/pages/toc.aux" 1778495618 4995 4ad28343a039111720af3d23a9d0a3c3 "xelatex"
+  "tmp/Thesis.aux" 1778766167 3726 7728b35d402e52889fcfecff21d1602c "xelatex"
+  "tmp/Thesis.bbl" 1778764307 63116 67c420ee1ff8431bfa8bbbb28685ebc3 "biber tmp/Thesis"
+  "tmp/Thesis.lof" 1778766167 1621 4a201f5d141af9e8f8be0c9a85e06d80 "xelatex"
+  "tmp/Thesis.lot" 1778766165 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
+  "tmp/Thesis.out" 1778766167 2215 a4208f24356744946ffbca2fb31b9843 "xelatex"
+  "tmp/Thesis.run.xml" 1778766167 2423 79caac9a9d1be64d3782920f2a72fd8a "xelatex"
+  "tmp/Thesis.toc" 1778766167 1637 fa631b828097779908da4c3c72324f50 "xelatex"
+  "tmp/tex/abstract.aux" 1778766165 4994 60ad49a2af5dd3b2bfc806e511d26ac8 "xelatex"
+  "tmp/tex/acknowledge.aux" 1778766167 5094 4f5c938731de5ebbfc0dcb4b769b2775 "xelatex"
+  "tmp/tex/introduction.aux" 1778766167 18206 275738be8c094e04b0c00a90cb0317db "xelatex"
+  "tmp/tex/pages/chinese_title.aux" 1778766165 5005 1423c57386f36d3e0c5e1a6b07e0db4a "xelatex"
+  "tmp/tex/pages/cover.aux" 1778766165 4997 a70235dd115c9b1854fc9a91e335620c "xelatex"
+  "tmp/tex/pages/english_title.aux" 1778766165 5005 fed0a6fc2d84cb20b4a7bc7f6cdd35d3 "xelatex"
+  "tmp/tex/pages/statement.aux" 1778766165 5001 d8159ebe2400811c23da681455cf34d0 "xelatex"
+  "tmp/tex/pages/toc.aux" 1778766165 4995 39d97d0132cec0ec027fb895a60892dd "xelatex"
   (generated)
   "tmp/Thesis.aux"
   "tmp/Thesis.bcf"

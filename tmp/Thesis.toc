@@ -11,5 +11,8 @@
 \contentsline {subsection}{\numberline {2.3}波导缝隙天线辐射原理}{11}{subsection.2.3}%
 \contentsline {subsubsection}{\numberline {2.3.1}理想缝隙天线}{11}{subsubsection.2.3.1}%
 \contentsline {subsubsection}{\numberline {2.3.2}缝隙形式及其等效电路}{13}{subsubsection.2.3.2}%
-\contentsline {section}{参考文献}{17}{equation.2.26}%
-\contentsline {section}{致谢}{19}{section*.13}%
+\contentsline {subsection}{\numberline {2.4}缝隙间的互耦}{17}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}缝隙间互耦阻抗的等效电路和计算方法}{18}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}振子耦合阻抗}{19}{subsubsection.2.4.2}%
+\contentsline {section}{参考文献}{21}{equation.2.49}%
+\contentsline {section}{致谢}{23}{section*.15}%

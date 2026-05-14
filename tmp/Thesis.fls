@@ -638,6 +638,15 @@ INPUT ./img/原理2.2.3d.png
 INPUT ./img/原理2.2.3e.png
 INPUT ./img/原理2.2.3e.png
 INPUT ./img/原理2.2.3e.png
+INPUT ./img/原理2.3.1a.jpg
+INPUT ./img/原理2.3.1a.jpg
+INPUT ./img/原理2.3.1a.jpg
+INPUT ./img/原理2.3.1b.jpg
+INPUT ./img/原理2.3.1b.jpg
+INPUT ./img/原理2.3.1b.jpg
+INPUT ./img/原理2.3.2.jpg
+INPUT ./img/原理2.3.2.jpg
+INPUT ./img/原理2.3.2.jpg
 INPUT ./tex/acknowledge.tex
 INPUT ./tex/acknowledge.tex
 OUTPUT tmp/tex/acknowledge.aux

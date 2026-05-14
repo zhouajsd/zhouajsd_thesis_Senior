@@ -436,41 +436,6 @@ $U_0$时，缝隙口面上会建立起电场分布$E_a$，这种结构被称作�
 \end{equation}
 式中$U_M$为波腹电压，$G_s$为辐射电导。
 
-\begin{figure}[htb!]
-    \begin{subfigure}{.6\textwidth}
-        \centering
-        \includegraphics[height=.15\textheight]{./img/原理2.2.3a.png}
-        \caption{宽边纵缝及其等效电路}
-        \label{fig_principle_2.2.3a}
-    \end{subfigure}\\
-    \begin{subfigure}{.6\textwidth}
-        \centering
-        \includegraphics[height=.15\textheight]{./img/原理2.2.3b.png}
-        \caption{窄边横缝及其等效电路}
-        \label{fig_principle_2.2.3b}
-    \end{subfigure}\\
-    \begin{subfigure}{.6\textwidth}
-        \centering
-        \includegraphics[height=.15\textheight]{./img/原理2.2.3c.png}
-        \caption{宽边中心斜缝及其等效电路}
-        \label{fig_principle_2.2.3c}
-    \end{subfigure}\\
-    \begin{subfigure}{.6\textwidth}
-        \centering
-        \includegraphics[height=.15\textheight]{./img/原理2.2.3d.png}
-        \caption{宽边斜缝及其等效电路}
-        \label{fig_principle_2.2.3d}
-    \end{subfigure}\\
-    \begin{subfigure}{.6\textwidth}
-        \centering
-        \includegraphics[height=.15\textheight]{./img/原理2.2.3e.png}
-        \caption{窄边斜缝及其等效电路}
-        \label{fig_principle_2.2.3e} 
-    \end{subfigure}
-    \caption{波导缝隙形式及其等效电路示意图}
-    \label{fig_principle_2.2.3}
-\end{figure}
-
     在一个无穷大的理想平面上，一个半波缝隙电导为：
 \begin{equation}
     G_r^s=\frac{1}{R_r^s}=\frac{73.1}{\left(60 \pi\right)^2}
@@ -493,13 +458,202 @@ $U_0$时，缝隙口面上会建立起电场分布$E_a$，这种结构被称作�
 \begin{equation}
     I_M=\frac{1}{73.1}\int_{-\lambda/4}^{\lambda/4}E_z \cos kz \, dz
 \end{equation}
-    波腹电压可以由磁场在纵向方向上的分量H_z给出：
+    波腹电压可以由磁场在纵向方向上的分量$H_z$给出：
 \begin{equation}
     U_M=\frac{1}{G}\int_{-\lambda/4}^{\lambda/4}H_z \cos kz \,dz
 \end{equation}
     将纵向缝隙的位置放置在距中心线$x_1$处，有：
 \begin{equation}
     U_M = j \frac{E_{10}}{G_s \eta_0} \left( \frac{\lambda}{2a} \right) \sin \frac{\pi x_1}{a} \int_{-\lambda/4}^{\lambda/4} e^{-j\beta z} \cos kz \, dz
-
 = j \frac{E_{10}}{G_s \eta_0} \left( \frac{\lambda}{2a} \right) \sin \frac{\pi x_1}{a} \frac{2k \cos \frac{\pi \lambda}{2\lambda_g}}{k^2 - \beta^2}
+\end{equation}
+    其中\(k^2-\beta^2=\left(\pi/a\right)^2\)
+\begin{equation}
+    g = \frac{1}{G_s n_0} \left( \frac{2a}{\pi} \right)^2 \frac{4}{ab} \frac{\lambda_g}{\lambda} \cos^2\left(\frac{\pi \lambda}{2\lambda_g}\right) \sin^2\left(\frac{\pi x_1}{a}\right)
+\end{equation}
+    由此式可得结论，纵向缝隙的位置放置在中心线时，$x_1$=0，并不会有辐射效应。
+
+    因此求得不同结构波导的缝隙的经过归一化求解的等效电导或电阻：
+
+\begin{figure}[htb!]
+    \centering
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[height=.1\textheight]{./img/原理2.2.3a.png}
+        \caption{宽边纵缝及其等效电路}
+        \label{fig_principle_2.2.3a}
+    \end{subfigure}\\
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[height=.1\textheight]{./img/原理2.2.3b.png}
+        \caption{窄边横缝及其等效电路}
+        \label{fig_principle_2.2.3b}
+    \end{subfigure}\\
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[height=.1\textheight]{./img/原理2.2.3c.png}
+        \caption{宽边中心斜缝及其等效电路}
+        \label{fig_principle_2.2.3c}
+    \end{subfigure}\\
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[height=.1\textheight]{./img/原理2.2.3d.png}
+        \caption{宽边斜缝及其等效电路}
+        \label{fig_principle_2.2.3d}
+    \end{subfigure}\\
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[height=.1\textheight]{./img/原理2.2.3e.png}
+        \caption{窄边斜缝及其等效电路}
+        \label{fig_principle_2.2.3e} 
+    \end{subfigure}
+    \caption{波导缝隙形式及其等效电路示意图}
+    \label{fig_principle_2.2.3}
+\end{figure}
+
+    1.宽边纵缝[见图2.5 a)]：
+\begin{equation}
+    g = g_1 \sin^2\left(\frac{\pi x_1}{a}\right), \quad g_1 = 2.09 \frac{a \lambda_g}{b \lambda} \cos^2\left(\frac{\pi \lambda}{2 \lambda_g}\right)
+\end{equation}
+    
+    2.宽边横缝[见图2.5 b)]：
+\begin{equation}
+    r = 0.523 \left( \frac{\lambda_g}{\lambda} \right)^2 \left( \frac{\lambda^2}{ab} \right) \cos^2\left(\frac{\pi \lambda}{4a}\right) \cos^2\left(\frac{\pi x_1}{a}\right)
+\end{equation}
+
+    3.宽边对称斜缝[见图2.5 c)]：
+\begin{equation}
+    r = 0.131 \frac{\lambda^3}{\lambda_g ab} \left[ f_1(\phi) \sin \phi + \frac{\lambda_g}{2a} f_2(\phi) \cos \phi\right]^2 
+\end{equation}
+    如果$\phi$并不大，可以进行近似求解：
+\begin{equation}
+    r = 0.542 \frac{\lambda_g \lambda}{ab} \left[ \frac{\beta}{2} \sin\left(\frac{\pi \lambda}{2\lambda_g}\right) - \frac{4a^2}{\lambda_g \lambda} \cos\left(\frac{\pi \lambda}{2\lambda_g}\right) \right] \phi^2
+\end{equation}
+    式中$\phi$ 为弧度制。
+    4.宽边偏置斜缝[见图2.5 d)]：
+    如果$x_1$、$\phi$均不大时，有：
+\begin{equation}
+    g = 0.131 \,\frac{\lambda}{\lambda_g}\,\frac{\lambda^2}{ab}\left(a_1^2 + b_1^2\right)
+\end{equation}
+\begin{equation}
+    a_1 = \sin\left(\frac{\pi x_1}{a}\right)
+    \left[
+    f_2(\phi)\sin\phi+\frac{\lambda_g}{2a} f_1(\phi)\cos\phi
+    \right]
+\end{equation}
+\begin{equation}
+    b_1 = \cos\left(\frac{\pi x_1}{a}\right)
+    \left[
+    f_1(\phi)\sin\phi+\frac{\lambda_g}{2a} f_2(\phi)\cos\phi
+    \right]
+\end{equation}
+    5.窄边斜缝[见图2.2 e)]：
+\begin{equation}
+    g = 0.131 \,\frac{\lambda^3 \lambda_g}{a^3 b}
+    \left[
+    \sin\phi \;
+    \frac{\cos\!\left(\frac{\pi\lambda}{2\lambda_g}\sin\phi\right)}
+    {1-\left(\frac{\lambda}{\lambda_g}\sin\phi\right)^2}
+    \right]^2
+\end{equation}
+    如果$\phi$≤15°，则：
+\begin{equation}
+    g = A_1 \sin^2\phi \, \qquad
+    A_1 = \frac{30}{73.1 \pi}\,\frac{\lambda^3 \lambda_g}{a^3 b}
+\end{equation}
+    虽然上文所述皆为精确的求解方法，但各自都有适用的前提条件。当互耦效应可以忽略不计时，这些方法均能直接应用；而在互耦效应不可忽视或其他复杂条件下，不同学者通过一系列研究，已针对不同情况提出了相应的求解思路。
+
+
+
+\subsection{缝隙间的互耦}
+    缝隙阵列天线由多个按特定规律排布的缝隙单元构成。由于相邻缝隙之间的间距通常不满足远大于波长的条件，它们之间的相互影响在阵列天线的设计中不可忽略。在低副瓣或极低副瓣天线的设计过程中，若忽略互耦效应，而直接采用孤立
+缝隙的电参数进行设计，会导致天线口径面上的幅度分布与相位分布恶化。此外，当两个缝隙相距很近时，彼此的场分布会产生干扰，各自的阻抗相对于孤立状态也会发生变化。这些因素都会使天线输入端的匹配条件恶化，从而严重影响天线的整体性能。
+
+\subsubsection{缝隙间互耦阻抗的等效电路和计算方法}
+    波导缝隙阵列的一段如图2.6 a)所示
+\begin{figure}[htb!]
+    \centering
+    \begin{subfigure}{.6\textwidth}
+        \centering
+        \includegraphics[height=.15\textheight]{./img/原理2.3.1a.jpg}
+        \caption{单缝隙示意图}
+        \label{fig_principle_2.3.1a} 
+    \end{subfigure}
+    \\
+    \begin{subfigure}{.6\textwidth}
+        \centering
+        \includegraphics[height=.15\textheight]{./img/原理2.3.1b.jpg}
+        \caption{等效电路}
+        \label{fig_principle_2.3.1b}
+    \end{subfigure}
+    \caption{波导缝隙形式及其等效电路示意图}
+    \label{fig_principle_2.3.1}
+\end{figure}
+    其中$\lambda_g$表示波导波长。假设该缝隙为阵列的第n个缝隙，缝隙中心轴线偏离波导宽面轴线的距离为$x_n$，其等效电路如图2.6 b)所示。
+该等效电路的前提条件是：
+    a)、波导中只有TE$_10$波传播；
+    
+    b)、激励源位于\(z=-\lambda_g\)处，即激励源到缝隙的距离为四分之三波长；$Y_n^A$为第n个缝隙的有源导纳，则有\supercite{25}:
+\begin{equation}
+    \frac{Y_n^A}{G_0} = \frac{1}{Z_n^A / 73} 
+    \left\{ 
+        \frac{4(a/b)}{0.61\pi(\beta/k)} [\cos(\beta l_n) - \cos(k l_n)]^2 \sin^2\left(\frac{\pi x_n}{a}\right) 
+    \right\}
+\end{equation}
+    式中，$Z_n^A$是第n个缝隙的等效振子的有源阻抗；
+\begin{equation}
+    Z_n^A = Z_n + Z_n^L + \sum_{m=1}^n \frac{I_m}{I_n} Z_{mn}
+\end{equation}
+    式中，$Z_n$是第n个等效振子的自阻抗,$Z_n^L$是第 个等效负载阻抗；$Z_mn$是耦合阻抗；把$Y_n^A$分成两部分可以得到\supercite{4}:
+\begin{equation}
+    \frac{Y_n}{G_0} = 
+    \frac{\frac{4(a/b)}{0.61\pi(\beta/k)} \left[ \cos(\beta l_n) - \cos(kl_n) \right]^2 \sin^2\left(\frac{\pi x_n}{a}\right)}
+    {\left(\frac{Z_{mn}}{73}\right) - \sum_{m=1}^N \frac{\left(\frac{Z_{mn}}{73}\right)^2}{\left(\frac{Z_{mm}}{73}\right)}}
+\end{equation}
+
+\begin{equation}
+    \frac{Y_{mn}}{G_0} = -\frac{Z_{mn}}{Z_{mm}} \cdot \frac{\left[ \cos(\beta l_n) - \cos(kl_n) \right] \sin\left(\frac{\pi x_m}{a}\right)}{\left[ \cos(\beta l_n) - \cos(kl_n) \right] \sin\left(\frac{\pi x_n}{a}\right)}
+\end{equation}
+    由上式可推出：
+\begin{equation}
+    \frac{Y^2_{mn}}{Y_m Y_n} = \frac{Z^2_{mn}}{Z_m Z_n}
+\end{equation}
+    由式(2.37)~(2.41)可以看出，缝隙的耦合阻抗可以通过缝隙的等效振子的耦合阻抗计算得出。
+
+\subsubsection{振子耦合阻抗}
+    当两个振子紧密排列时，辐射场之间的相互耦合会导致各自阻抗发生变化，进而改变电流的幅值与方向，最终影响天线的方向性。对于天线的耦合问题，通常采用阻抗模型进行描述，常用的分析方法包括感应电动势法和散射矩阵法\supercite{21}\supercite{22}\supercite{23}。
+    设两个振子的相对位置如图2.7 a)所示，$L_1$、$L_2$分别是主振子h和从振子的长度，$x'y'z'$是以振子为中心从原点建立的从坐标系，$y_0$、$z_0$是它到主坐标系的位移量。$\theta$是从振子与$z$'轴之间的夹角，$\phi$是从振子与$x$'轴之间的夹角。根据阻抗定义有下式：
+\begin{equation}
+    Z_{21}=-\frac{V_{21}}{I_1}
+\end{equation}
+    式中，$V_{21}$是从振子在主振子上的感应电动势总和。
+\begin{figure}[htb!]
+    \centering
+    \includegraphics[width=.7\textwidth]{img/原理2.3.2.jpg}
+    \caption{两振子相对位置}
+    \label{fig_principle_2.3.2}
+\end{figure}
+\begin{equation}
+    E_z = j30I_1 \left[ 2 \frac{e^{-jkR_0}}{R_0} \cos\left(\frac{kL_1}{2}\right) - \frac{e^{-jkR_1}}{R_1} - \frac{e^{-jkR_2}}{R_2} \right]
+\end{equation}
+
+\begin{equation}
+    E_\rho = \frac{j30I_1}{\rho} \left[ e^{-jkR_1} \cos\alpha_1 + e^{-jkR_2} \cos\alpha_2 - 2\cos\left(\frac{kL_1}{2}\right)e^{-jkR_0}\cos\alpha \right]
+\end{equation}
+    式中，$I_1$为主振子的电流幅值。将上式转换到直角坐标系下有：
+\begin{equation}
+    E_x=E_{\rho}\frac{S_x}{\rho}
+\end{equation}
+\begin{equation}
+    E_y=E_{\rho}\frac{y_0+S_y}{\rho}
+\end{equation}
+\begin{equation}
+    E_z=E_z
+\end{equation}
+\begin{equation}
+    E_{21} = \frac{\bar{E} \cdot \bar{S}}{S} = \frac{E_x S_x + E_y S_y + E_z S_z}{S}
+\end{equation}
+    把式(2.45)~(2.47)代入式(2.48)得:
+\begin{equation}
+    E_{21} = \frac{ \frac{E_{x}^{2} + S_{y}y_{0} + S_{y}^{2}}{\rho} + E_{z}S_{z} }{S}
 \end{equation}
